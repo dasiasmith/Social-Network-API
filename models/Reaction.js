@@ -6,7 +6,7 @@ const responseSchema = new Schema(
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
     },
-    responseBody: {
+    reactionBody: {
       type: String,
       required: true,
       maxlength: 280,
@@ -28,4 +28,4 @@ const responseSchema = new Schema(
   }
 );
 
-module.exports = responseSchema;
+module.exports = reactionSchema;
