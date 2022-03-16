@@ -1,11 +1,13 @@
 const { Thought, User } = require('../models');
 
+// Get all thoughts
 module.exports = {
   getThoughts(req, res) {
     Thought.find()
       .then((thoughts) => res.json(thoughts))
       .catch((err) => res.status(500).json(err));
   },
+  // Get single thought
   getSingleThought(req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((thought) =>
@@ -15,7 +17,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // create a new thought
+  // Create a new thought
   createThought(req, res) {
     Thought.create(req.body)
       .then((thought) => {
