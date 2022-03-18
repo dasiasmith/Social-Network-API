@@ -58,7 +58,7 @@ module.exports = {
   },
   // Delete a thought
   deleteThought(req, res) {
-    Thought.findOneAndRemove({ _id: req.params.videoId })
+    Thought.findOneAndDelete({ _id: req.params.videoId })
       .then((thought) =>
         !thought
           ? res.status(404).json({ message: 'No thought in that handsome head!' })
@@ -93,7 +93,7 @@ module.exports = {
   },
   // Remove thought reaction
   removeThoughtReaction(req, res) {
-    Thought.findOneAndUpdate(
+    Thought.findOneAndDelete(
       { _id: req.params.thoughtId },
       { $pull: { reactions: { reactionId: req.params.reactionId } } },
       { runValidators: true, new: true }

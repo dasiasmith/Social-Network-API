@@ -36,7 +36,7 @@ module.exports = {
   },
   // Delete user
   deleteUser(req, res) {
-    User.findOneAndRemove({ _id: req.params.userId })
+    User.findOneAndDelete({ _id: req.params.userId })
       .then((user) =>
         !user
           ? res.status(404).json({ message: 'No user with that ID' })
@@ -60,7 +60,7 @@ module.exports = {
   },
   // Remove friend
   removeFriend(req, res) {
-    User.findOneAndUpdate(
+    User.findOneAndDelete(
       { _id: req.params.userId }, 
       { $pull: { friend: { friendId: req.params.friendId } } },
       { runValidators: true, new: true }
