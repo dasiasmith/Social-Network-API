@@ -42,7 +42,7 @@ module.exports = {
   // Update a thought
   updateThought(req, res) {
     Thought.findOneAndUpdate(
-      { _id: req.params.videoId },
+      { _id: req.params.thoughtId },
       { $set: req.body },
       { runValidators: true, new: true }
     )
@@ -63,8 +63,8 @@ module.exports = {
         !thought
           ? res.status(404).json({ message: 'No thought in that handsome head!' })
           : User.findOneAndUpdate(
-              { thoughts: req.params.videoId },
-              { $pull: { thoughts: req.params.videoId } },
+              { thoughts: req.params.thoughtId },
+              { $pull: { thoughts: req.params.thoughtId } },
               { new: true }
             )
       )
