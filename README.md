@@ -4,7 +4,7 @@
 
   ## Description
 
-  This application builds an API for a social network where users can share their thoughts, react to friends’ thoughts, and create a friend list. It utilizes Express.js for routing, a MongoDB database, and the Mongoose ODM. 
+  This application builds an API for a social network where users can share their thoughts, react to friends’ thoughts, and create a friend list. It utilizes Express.js for routing, a MongoDB database, and the Mongoose ODM. A video demonstration can be found [here](https://drive.google.com/file/d/1H7fOICaB4822x4oWwAcSRsIqt1RgQycB/view?usp=sharing)
 
   ## Table of Contents
 
@@ -34,21 +34,21 @@
 
   The following animations show examples of the application's API routes being tested in Insomnia.
 
-  The following animation shows GET routes to return all users and all thoughts being tested in Insomnia:
+  The following picture shows GET routes to return all users and all thoughts being tested in Insomnia:
 
-  ![Demo of GET routes to return all users and all thoughts being tested in Insomnia.](./Assets/18-nosql-homework-demo-01.gif)
+  ![Demo of GET routes to return all users and all thoughts being tested in Insomnia.](./Assets/AllUsers.PNG)
 
-  The following animation shows GET routes to return a single user and a single thought being tested in Insomnia:
+  The following picture shows GET routes to return a single user and a single thought being tested in Insomnia:
 
-  ![Demo that shows GET routes to return a single user and a single thought being tested in Insomnia.](./Assets/18-nosql-homework-demo-02.gif)
+  ![Demo that shows GET routes to return a single user and a single thought being tested in Insomnia.](./Assets/SingleUser.PNG)
 
-  The following animation shows the POST, PUT, and DELETE routes for users being tested in Insomnia:
+  The following picture shows the POST route for a new thought being tested in Insomnia:
 
-  ![Demo that shows the POST, PUT, and DELETE routes for users being tested in Insomnia.](./Assets/18-nosql-homework-demo-03.gif)
+  ![Demo that shows the POST route for new thought being tested in Insomnia.](./Assets/NewThought.PNG)
 
-  The following animation shows the POST and DELETE routes for a user’s friend list being tested in Insomnia:
+  The following picture shows the DELETE route for a reaction being tested in Insomnia:
 
-  ![Demo that shows the POST and DELETE routes for a user’s friend list being tested in Insomnia.](./Assets/18-nosql-homework-demo-04.gif)
+  ![Demo that shows the POST and DELETE routes for a user’s friend list being tested in Insomnia.](./Assets/RemoveReaction.PNG)
 
   ## Installation
   
